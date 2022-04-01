@@ -2,9 +2,9 @@
 
     <header class="entry-header">
 
-    <span class="dashicons dashicons-format-<?php echo get_post_format($post->ID); ?>">
+        <span class="dashicons dashicons-format-<?php echo get_post_format($post->ID); ?>"> </span>
 
-    </span>
+         <p> <?php  esc_html_e( 'Enjoy this gallery', 'understrap-child' ); ?> </p>
 
         <?php the_title( '<h1>', '</h1>'); ?>
         
