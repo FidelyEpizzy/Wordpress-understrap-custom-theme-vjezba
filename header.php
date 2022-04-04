@@ -28,12 +28,11 @@
             </div>
             
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                        <?php 
-                            $args = [
-                                'theme_location' => 'main-menu'
-                            ] ;
-                            wp_nav_menu( $args );
-                        ?>
+                <?php 
+                   wp_nav_menu( array(
+                    'theme_location'  => 'main-menu',
+                   ) );
+                ?>
             </nav>
 
         </header>
