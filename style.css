@@ -22,6 +22,11 @@ body {
   body.category-8 {
     background-color: #a7ff91;
   }
+
+  body.page-titi-pipi,
+  body.page-id-14 {
+    background-color: #007acc;
+  }
   
   h1, h2, h3, h4, h5, h6,
   .site-title {
@@ -206,10 +211,23 @@ body {
     border-color: #777;
   }
   
+  #secondary .extended {
+    width: 100%;
+    clear: both;
+  }
   
   #secondary {
     width: 25%;
     float: right;
+  }
+  .home #secondary .widget {
+    width: 30%;
+    float: left;
+  }
+
+  .home #secondary {
+    width: 100%;
+    clear: both;
   }
   
   #secondary h2 {

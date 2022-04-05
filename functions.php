@@ -110,12 +110,31 @@ function understrap_child_theme_widgets_init() {
 	register_sidebar([
 		'name'			=> esc_html__( 'Main Sidebar', 'understrap-child' ),
 		'id'			=> 'main-sidebar',
-		'description'	=> esc_html__( 'Add widgets for main sidebar here', 'understra-child' ),
+		'description'	=> esc_html__( 'Add widgets for main sidebar here', 'understrap-child' ),
 		'before_widget' => '<section class="widget">',
 		'after_widget'	=> '</section>',
 		'before_title'	=> '<h2 class="widget-title">',
 		'after_title'	=> '</h2>'
 	]);
+	register_sidebar([
+		'name'			=> esc_html__( 'Page sidebar', 'understrap-child' ),
+		'id'			=> 'page-sidebar',
+		'description'	=> esc_html__( 'Add widgets for page sidebar here', 'understrap-child' ),
+		'before_widget' => '<section class="widget">',
+		'after_widget'	=> '</section>',
+		'before_title'	=> '<h2 class="widget-title">',
+		'after_title'	=> '</h2>'
+	]);
+	register_sidebar([
+		'name'			=> esc_html__( 'Front Page sidebar', 'understrap-child' ),
+		'id'			=> 'front-page',
+		'description'	=> esc_html__( 'Add widgets for front page here', 'understrap-child' ),
+		'before_widget' => '<section class="widget">',
+		'after_widget'	=> '</section>',
+		'before_title'	=> '<h2 class="widget-title">',
+		'after_title'	=> '</h2>'
+	]);
+
 }
 add_action( 'widgets_init', 'understrap_child_theme_widgets_init' )
 ?>
