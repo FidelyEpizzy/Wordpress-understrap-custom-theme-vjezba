@@ -27,6 +27,10 @@ body {
   body.page-id-14 {
     background-color: #007acc;
   }
+
+  body.postid-98 {
+    background-color: orange;
+  }
   
   h1, h2, h3, h4, h5, h6,
   .site-title {
@@ -139,7 +143,7 @@ body {
     word-wrap: break-word;
   }
   
-  .single-portfolio #content,
+  .single-machke #content,
   .page-template-template-splash #content,
   .page-id-1096 #content,
   .category-excerpt #content,
@@ -181,7 +185,7 @@ body {
   
   .prev-posts,
   .next-posts,
-  .archive article.portfolio {
+  .archive article.machke {
     width: 45%;
     float: left;
   }
@@ -191,7 +195,7 @@ body {
     float: right;
   }
   
-  .archive article.portfolio:nth-child(even) {
+  .archive article.machke:nth-child(even) {
     margin-right: 5%;
   }
   

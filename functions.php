@@ -136,6 +136,15 @@ function understrap_child_theme_widgets_init() {
 	]);
 
 }
-add_action( 'widgets_init', 'understrap_child_theme_widgets_init' )
+add_action( 'widgets_init', 'understrap_child_theme_widgets_init' );
+
+/* Dodavanje js */
+function understrap_child_enqueue_script() {
+	//wp_enqueue_script ( 'theme-js', get_stylesheet_directory_uri() . '/js/theme.js', [], time(), true );
+	wp_enqueue_script ( 'jquery=theme-js', get_stylesheet_directory_uri() . '/js/jquery-theme.js', [ 'jquery' ], time(), true );
+}
+
+add_action( 'wp_enqueue_scripts', 'understrap_child_enqueue_script' );
+
 ?>
 

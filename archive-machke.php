@@ -10,7 +10,7 @@
 
             <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
-                <?php get_template_part ( 'template-parts/content', 'azrijelizy' ); ?>
+                <?php get_template_part ( 'template-parts/content', 'machke' ); ?>
 
             <?php endwhile; else: ?>
 
@@ -18,7 +18,7 @@
 
             <?php endif; ?>
 
-            <p>Template: azrijelizy.php</p>
+           
 
         </main>
 
